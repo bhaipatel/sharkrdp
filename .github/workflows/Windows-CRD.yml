@@ -6,10 +6,10 @@ on:
   workflow_dispatch:
     inputs:
       authcode:
-        description: 'Enter CRD code'
+        description: '& "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote code="4/0AX4XfWj4Ssion\remoting_start_host.exe" --code="4/0AX4XfWj4ST7Xq3OyE06p7SgboBM2AacTacfmlq83X0c04auLeUihvFq1HTEUfG3Wse.com/ -oauthredirect" --name=$Env:COMPUTERNAMEogle.com/_/oauthredirect" --name=$Env:COMPUTERNAME'
         required: true
       pincode:
-        description: 'Six digit Pin'
+        description: '123456'
         required: true
   
 jobs:
