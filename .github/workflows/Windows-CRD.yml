@@ -21,7 +21,7 @@ jobs:
     - name: Initializing Setup
       run: ./setup.ps1
     - name: Starting CRD 
-      run: ${{ github.event.inputs.authcode }} -pin=${{ github.event.inputs.pincode }}
+      run: & "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AX4XfWgAzuX9tOaPmM1bpNp1_QHkPrd_JVkqAczm9Ag_zGvvww0znoeTOuq86TS62mHMig" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME
     - name: Keep Alive
       run: ./timeout.ps1
 
